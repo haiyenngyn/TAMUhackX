@@ -10,6 +10,7 @@ import UIKit
 
 struct ContentView: View {
     @State private var tabSelection = 1;
+    @State private var response = Response()
     
     var body: some View {
     
@@ -28,8 +29,17 @@ struct ContentView: View {
         .overlay(alignment: .bottom) {
             CustomTabView(tabSelection: $tabSelection)
         }
+        .task {
+            do {
+                response = try await getData()
+                print(response)
+            } catch {
+                print("error")
+            }
+        }
        
     }
+
       
 }
 

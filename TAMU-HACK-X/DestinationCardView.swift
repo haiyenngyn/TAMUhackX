@@ -37,11 +37,11 @@ struct DestinationCardView: View {
             VStack {
                 HStack {
                     VStack {
-//                        Text(destination.name)
-//                            .fontWeight(.bold) //
-//                            .font(.title2)
-//                            .frame(maxWidth: .infinity, alignment: .leading)
-//                            .padding(.leading)
+                        Text(destination.name)
+                            .fontWeight(.bold) //
+                            .font(.title2)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading)
                         HStack {
                             Image(systemName: "location.fill")
                                 .padding(.leading)
