@@ -11,6 +11,12 @@
 		7EA9EE472B65874F004AA3A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9EE462B65874F004AA3A3 /* ContentView.swift */; };
 		7EA9EE492B658750004AA3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA9EE482B658750004AA3A3 /* Assets.xcassets */; };
 		7EA9EE4C2B658750004AA3A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA9EE4B2B658750004AA3A3 /* Preview Assets.xcassets */; };
+		83BAC3932B65A36A00758F09 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAC3922B65A36A00758F09 /* CustomTabView.swift */; };
+		83BAC3992B65B3FA00758F09 /* DestinationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAC3982B65B3FA00758F09 /* DestinationCardView.swift */; };
+		83BAC39B2B65B46A00758F09 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAC39A2B65B46A00758F09 /* Destination.swift */; };
+		83BAC39D2B65CE9400758F09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAC39C2B65CE9400758F09 /* HomeView.swift */; };
+		83BAC39F2B65EBD300758F09 /* CurrencyConvView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAC39E2B65EBD300758F09 /* CurrencyConvView.swift */; };
+		83BAC3A12B65FA5000758F09 /* UtilsCurrConv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAC3A02B65FA5000758F09 /* UtilsCurrConv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		7EA9EE462B65874F004AA3A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7EA9EE482B658750004AA3A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EA9EE4B2B658750004AA3A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83BAC3922B65A36A00758F09 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		83BAC3982B65B3FA00758F09 /* DestinationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCardView.swift; sourceTree = "<group>"; };
+		83BAC39A2B65B46A00758F09 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		83BAC39C2B65CE9400758F09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		83BAC39E2B65EBD300758F09 /* CurrencyConvView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConvView.swift; sourceTree = "<group>"; };
+		83BAC3A02B65FA5000758F09 /* UtilsCurrConv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsCurrConv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				7EA9EE442B65874F004AA3A3 /* TAMU_HACK_XApp.swift */,
 				7EA9EE462B65874F004AA3A3 /* ContentView.swift */,
+				83BAC39C2B65CE9400758F09 /* HomeView.swift */,
+				83BAC3922B65A36A00758F09 /* CustomTabView.swift */,
+				83BAC3982B65B3FA00758F09 /* DestinationCardView.swift */,
+				83BAC39A2B65B46A00758F09 /* Destination.swift */,
+				83BAC39E2B65EBD300758F09 /* CurrencyConvView.swift */,
+				83BAC3A02B65FA5000758F09 /* UtilsCurrConv.swift */,
 				7EA9EE482B658750004AA3A3 /* Assets.xcassets */,
 				7EA9EE4A2B658750004AA3A3 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BAC3932B65A36A00758F09 /* CustomTabView.swift in Sources */,
+				83BAC3A12B65FA5000758F09 /* UtilsCurrConv.swift in Sources */,
 				7EA9EE472B65874F004AA3A3 /* ContentView.swift in Sources */,
+				83BAC39B2B65B46A00758F09 /* Destination.swift in Sources */,
+				83BAC39D2B65CE9400758F09 /* HomeView.swift in Sources */,
+				83BAC39F2B65EBD300758F09 /* CurrencyConvView.swift in Sources */,
 				7EA9EE452B65874F004AA3A3 /* TAMU_HACK_XApp.swift in Sources */,
+				83BAC3992B65B3FA00758F09 /* DestinationCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
