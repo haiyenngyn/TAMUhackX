@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationStack {
-            Text("Top 10 Destinations of the Week")
+            Text("Top Destinations of the Week")
                 .fontWeight(.bold)
                 .font(.title2)
             
