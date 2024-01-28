@@ -15,8 +15,8 @@ struct CustomTabView: View {
         ("house", "Home"),
         ("magnifyingglass", "Search"),
         ("heart", "Saved"), //still need one tab for cool functions like curr converter
-        ("dollarsign", "CurrX"),
-        ("gear", "Settings")
+        ("dollarsign", "CurrX")
+        //("gear", "Settings")
     ]
     
     var body: some View {
@@ -27,7 +27,7 @@ struct CustomTabView: View {
                 .shadow(radius: 3)
             
             HStack {
-                ForEach(0..<5) { index in
+                ForEach(0..<4) { index in
                     Button {
                         tabSelection = index+1
                     } label: {
