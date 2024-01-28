@@ -39,38 +39,74 @@ struct CurrencyConvView: View {
     
     var body: some View {
         NavigationStack {
-            //Text("Currency Converter")
-              //  .fontWeight(.bold)
-                //.font(.title)
-            
-            Form {
-                Section(header: Text("Convert a currency")) {
-                    TextField("Amount", value: $amount, format: .currency(code: currencies[BaseCurr]))
+            Text("Currency Converter")
+              .fontWeight(.bold)
+              .font(.title)
+              .padding(.top)
+           
+            VStack (alignment: .leading) {
+                Text("Enter the Amount")
+                    .fontWeight(.bold)
+                    .font(.title2)
+           
+                    TextField("...", value: $amount, format: .currency(code: currencies[BaseCurr]))
+                        .font(.title)
+                        .padding(.bottom)
                         .keyboardType(.decimalPad)
-                    
-                    Picker(selection: $BaseCurr, label: Text("From")) {
-                        ForEach(0 ..< 3) { index in
-                            Text(self.currencies[index]).tag(index)
+                
+                
+                VStack {
+                    HStack {
+                        Text("From")
+                        Picker(selection: $BaseCurr, label: Text("From")){
+                            ForEach(0 ..< 3) { index in
+                                Text(self.currencies[index]).tag(index)
+                            }
                         }
+                        .frame(width: 250, alignment: .trailing)
                     }
-                    
-                    Picker(selection: $TargetCurr, label: Text("To")) {
-                        ForEach(0 ..< 3) { index in
-                            Text(self.currencies[index]).tag(index)
+                  
+                    HStack {
+                        Text("To")
+                        Picker(selection: $TargetCurr, label: Text("To")){
+                            ForEach(0 ..< 3) { index in
+                                Text(self.currencies[index]).tag(index)
+                            }
                         }
+                        .frame(width: 270, alignment: .trailing)
                     }
-                }
-                Section(header: Text("Conversion")) {
-                   // Text("\(converter(amount)) \(currencies[TargetCurr])")
-                    Text(converter(amount), format: .currency(code: currencies[TargetCurr]))
-                                                                
+            
                 }
             }
+                .frame(maxWidth:300, alignment: .leading)
+                .padding()
+                .background()
+                .cornerRadius(15)
+                .shadow(radius:3)
+                .padding(.bottom)
+            
+            
+            VStack (alignment: .leading){
+                Text("Conversion")
+                    .fontWeight(.bold)
+                    .font(.title2)
+                    .padding(.bottom, 5)
+                
+                Text(converter(amount), format: .currency(code: currencies[TargetCurr]))
+                    .font(.title)
+                
+            }
+                .frame(maxWidth:300, alignment: .leading)
+                .padding()
+                .background()
+                .cornerRadius(15)
+                .shadow(radius:3)
+                Spacer()
+            }
         }
-        
-        
     }
-}
+    
+
 
 #Preview {
     CurrencyConvView()
