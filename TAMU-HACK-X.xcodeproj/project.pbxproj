@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E9D285F2B66CFB30001EB70 /* amadeusCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9D285E2B66CFB30001EB70 /* amadeusCalls.swift */; };
-		7E9D28612B66CFBA0001EB70 /* clientID.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E9D28602B66CFBA0001EB70 /* clientID.txt */; };
-		7E9D28632B66CFC50001EB70 /* clientSecret.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E9D28622B66CFC50001EB70 /* clientSecret.txt */; };
-		7E9D28652B66CFDE0001EB70 /* structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9D28642B66CFDE0001EB70 /* structs.swift */; };
+		7E0685432B80832F0056C53C /* amadeusCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0685422B80832F0056C53C /* amadeusCalls.swift */; };
+		7E0685452B80833D0056C53C /* structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0685442B80833D0056C53C /* structs.swift */; };
+		7E0685472B8083880056C53C /* clientID.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E0685462B8083880056C53C /* clientID.txt */; };
+		7E06854B2B80872B0056C53C /* clientSecret.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E06854A2B80872B0056C53C /* clientSecret.txt */; };
 		7EA9EE452B65874F004AA3A3 /* TAMU_HACK_XApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9EE442B65874F004AA3A3 /* TAMU_HACK_XApp.swift */; };
 		7EA9EE472B65874F004AA3A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9EE462B65874F004AA3A3 /* ContentView.swift */; };
 		7EA9EE492B658750004AA3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA9EE482B658750004AA3A3 /* Assets.xcassets */; };
@@ -28,10 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E9D285E2B66CFB30001EB70 /* amadeusCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = amadeusCalls.swift; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Desktop/TAMUhackX/TAMU-HACK-X/amadeusCalls.swift"; sourceTree = "<group>"; };
-		7E9D28602B66CFBA0001EB70 /* clientID.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = clientID.txt; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Desktop/TAMUhackX/TAMU-HACK-X/clientID.txt"; sourceTree = "<group>"; };
-		7E9D28622B66CFC50001EB70 /* clientSecret.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = clientSecret.txt; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Desktop/TAMUhackX/TAMU-HACK-X/clientSecret.txt"; sourceTree = "<group>"; };
-		7E9D28642B66CFDE0001EB70 /* structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = structs.swift; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Desktop/TAMUhackX/TAMU-HACK-X/structs.swift"; sourceTree = "<group>"; };
+		7E0685422B80832F0056C53C /* amadeusCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amadeusCalls.swift; sourceTree = "<group>"; };
+		7E0685442B80833D0056C53C /* structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = structs.swift; sourceTree = "<group>"; };
+		7E0685462B8083880056C53C /* clientID.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clientID.txt; sourceTree = "<group>"; };
+		7E06854A2B80872B0056C53C /* clientSecret.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clientSecret.txt; sourceTree = "<group>"; };
 		7EA9EE412B65874F004AA3A3 /* TAMU-HACK-X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAMU-HACK-X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA9EE442B65874F004AA3A3 /* TAMU_HACK_XApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMU_HACK_XApp.swift; sourceTree = "<group>"; };
 		7EA9EE462B65874F004AA3A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +80,8 @@
 		7EA9EE432B65874F004AA3A3 /* TAMU-HACK-X */ = {
 			isa = PBXGroup;
 			children = (
+				7E0685442B80833D0056C53C /* structs.swift */,
+				7E0685422B80832F0056C53C /* amadeusCalls.swift */,
 				7EA9EE442B65874F004AA3A3 /* TAMU_HACK_XApp.swift */,
 				7EA9EE462B65874F004AA3A3 /* ContentView.swift */,
 				83BAC39C2B65CE9400758F09 /* HomeView.swift */,
@@ -90,11 +92,9 @@
 				836FA5A62B66C27000E9044C /* FavoritesView.swift */,
 				830184E02B66B94500717FB0 /* Storyboard.storyboard */,
 				83BAC3A02B65FA5000758F09 /* UtilsCurrConv.swift */,
-				7E9D28642B66CFDE0001EB70 /* structs.swift */,
-				7E9D28602B66CFBA0001EB70 /* clientID.txt */,
-				7E9D28622B66CFC50001EB70 /* clientSecret.txt */,
-				7E9D285E2B66CFB30001EB70 /* amadeusCalls.swift */,
 				7EA9EE482B658750004AA3A3 /* Assets.xcassets */,
+				7E0685462B8083880056C53C /* clientID.txt */,
+				7E06854A2B80872B0056C53C /* clientSecret.txt */,
 				7EA9EE4A2B658750004AA3A3 /* Preview Content */,
 			);
 			path = "TAMU-HACK-X";
@@ -176,11 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA9EE4C2B658750004AA3A3 /* Preview Assets.xcassets in Resources */,
-				7E9D28612B66CFBA0001EB70 /* clientID.txt in Resources */,
+				7E0685472B8083880056C53C /* clientID.txt in Resources */,
 				7EA9EE492B658750004AA3A3 /* Assets.xcassets in Resources */,
 				830184E12B66B94500717FB0 /* Storyboard.storyboard in Resources */,
 				836FA5A42B66C00500E9044C /* Main.storyboard in Resources */,
-				7E9D28632B66CFC50001EB70 /* clientSecret.txt in Resources */,
+				7E06854B2B80872B0056C53C /* clientSecret.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +199,10 @@
 				83BAC39B2B65B46A00758F09 /* Destination.swift in Sources */,
 				83BAC39D2B65CE9400758F09 /* HomeView.swift in Sources */,
 				83BAC39F2B65EBD300758F09 /* CurrencyConvView.swift in Sources */,
-				7E9D28652B66CFDE0001EB70 /* structs.swift in Sources */,
+				7E0685452B80833D0056C53C /* structs.swift in Sources */,
 				7EA9EE452B65874F004AA3A3 /* TAMU_HACK_XApp.swift in Sources */,
 				83BAC3992B65B3FA00758F09 /* DestinationCardView.swift in Sources */,
-				7E9D285F2B66CFB30001EB70 /* amadeusCalls.swift in Sources */,
+				7E0685432B80832F0056C53C /* amadeusCalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

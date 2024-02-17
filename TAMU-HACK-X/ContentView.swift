@@ -33,13 +33,31 @@ struct ContentView: View {
             do {
                 response = try await getData()
                 print(response)
-            } catch {
-                print("error")
+            } 
+            catch CallError.fileNotFound {
+                print("file not found")
+            }
+            catch CallError.contentError {
+                print("Content error")
+            }
+            catch CallError.endPointError   {
+                print("endpoint error")
+            }
+            catch CallError.jsonFormatError  {
+                print("jason format")
+            }
+            catch CallError.non200NetworkCode {
+                print("non 200")
+            }
+            catch CallError.urlError    {
+                print("url error")
+            }
+            catch {
+                print("other")
             }
         }
        
     }
-
       
 }
 
